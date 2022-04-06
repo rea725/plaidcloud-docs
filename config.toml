@@ -123,7 +123,7 @@ id = "UA-53330916-3"
 [params]
 copyright_plaidcloud = "Copyright © 2022 Tartan Solutions, Inc | PlaidCloud ®"
 
-# privacy_policy = "https://policies.google.com/privacy"
+# privacy_policy = "https://plaidcloud.com/privacy-policy/"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
@@ -157,7 +157,7 @@ github_repo = "https://github.com/plaidcloud/plaidcloud-docs"
 #Searching
 plaidcloud_search = true
 
-#The following search parameters are specific to Docsy's implementation. PlaidCloud implementes its own search-related partials and scripts.
+#The following search parameters are specific to Docsy's implementation. PlaidCloud implements its own search-related partials and scripts.
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = "ee7b3fb393a7e3b28"
