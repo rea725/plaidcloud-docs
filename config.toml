@@ -149,10 +149,10 @@ currentUrl = "https://docs.plaidcloud.io/"
 nextUrl = "https://PlaidCloud-io-vnext-staging.netlify.com/"
 
 # See codenew shortcode
-githubWebsiteRaw = "raw.githubusercontent.com/plaidcloud/website"
+githubWebsiteRaw = "raw.githubusercontent.com/plaidcloud/plaidcloud-docs"
 
 # GitHub repository link for editing a page and opening issues.
-github_repo = "https://github.com/plaidcloud/website"
+github_repo = "https://github.com/plaidcloud/plaidcloud-docs"
 
 #Searching
 plaidcloud_search = true
