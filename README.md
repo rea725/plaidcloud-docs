@@ -6,12 +6,46 @@ There are also CI and beta versions of the documentation here:
  * [PlaidCloud CI Documentation](https://docs.plaidcloud.io)
  * [PlaidCloud Beta Documentation](https://docs.plaidcloud.net)
 
-## Using this repository
+## Contributing to the Documentation
+
+There are three main ways to contribute to the documentation depending on how much documentation you plan to develop.
+1. Easy (I'm pretending documentation doesn't exist mode) - This is the drive-by approach of simply going to Github and editing a page directly in the web browser.
+2. Engaged (I need to work on several pages or restructure things) - You will clone the repo and push commits back and wait for the automatic build to see your contributions.
+3. Serious (I plan to contribute significantly) - You will clone the repo and run a local Hugo server to see changes real-time.
+
+## Easy
+
+This requires no cloning or any other local setup for you to contribute to documentation.  Simply to to the [PlaidCloud Documentation Github](https://github.com/PlaidCloud/plaidcloud-docs) repo and navigate
+to the page you wish to edit.
+
+Click the `Edit this file` option on the menu and make your edits.
+
+Upon save, the site will be rebuilt and deployed with your latest change.  Since the entire site is rebuilt each time a save is made in this mode, you will need to wait a few minutes before your changes are visible in the IO documentation.
+
+## Engaged
+
+This approach requires very little technical setup other than cloning the [PlaidCloud Documentation Github Repo](https://github.com/PlaidCloud/plaidcloud-docs).
+
+Clone the repo using VS Code's Git repo management area.
+
+Once the repo is cloned locally, it is best to make a new branch from `main` so you can make several changes before committing them and triggering the rebuild process.  Once you have your changes completed,
+commit and push them.  Open a pull request to merge them into `main` from your branch.
+
+Once your PR is accepted and your changes merge into `main` then the IO site will be rebuilt within a few minutes.
+
+## Serious
+
+This is very much like the **Engaged** approach but with the ability to see your changes live by running a local Hugo server.
+
+Again, the need to run the Hugo server locally will boost productivity if you are contributing many changes but is likely not necessary for quick changes and additions that follow standard 
+markdown conventions.
+
+### Using this repository
 
 You can run the website locally using Hugo (Extended version), or you can run it in a container runtime. For web deployments, we strongly recommend using the container runtime, as it gives deployment consistency with the live website.
 However, for documentation development locally, the live local server is fast and efficient.
 
-## Prerequisites
+### Prerequisites
 
 To use this repository, you need the following installed locally:
 
@@ -34,22 +68,7 @@ The PlaidCloud website uses the [Docsy Hugo theme](https://github.com/google/doc
 git submodule update --init --recursive --depth 1
 ```
 
-## Running the website using a container
-
-To build the site in a container, run the following to build the container image and run it:
-
-```bash
-make container-image
-make container-serve
-```
-
-If you see errors, it probably means that the hugo container did not have enough computing resources available. To solve it, increase the amount of 
-allowed CPU and memory usage for Docker on your machine ([MacOSX](https://docs.docker.com/docker-for-mac/#resources) and 
-[Windows](https://docs.docker.com/docker-for-windows/#resources)).
-
-Open up your browser to <http://localhost:1313> to view the website. As you make changes to the source files, Hugo updates the website and forces a browser refresh.
-
-## Running the website locally using Hugo
+### Running the website locally using Hugo
 
 To build and test the site locally, run:
 
@@ -70,13 +89,13 @@ This will start the local Hugo server on port 1313. Open up your browser to <htt
 Keep in mind that the local server is not recreating all the static content so changes to templates might require a restart of the local hugo server for the template changes to be incoporated in what you see.
 
 
-## Troubleshooting
+### Troubleshooting
 
-### error: failed to transform resource: TOCSS: failed to transform "scss/main.scss" (text/x-scss): this feature is not available in your current Hugo version
+#### error: failed to transform resource: TOCSS: failed to transform "scss/main.scss" (text/x-scss): this feature is not available in your current Hugo version
 
 Hugo is shipped in two set of binaries for technical reasons. The current website runs based on the **Hugo Extended** version only. In the [release page](https://github.com/gohugoio/hugo/releases) look for archives with `extended` in the name. To confirm, run `hugo version` and look for the word `extended`.
 
-### Troubleshooting macOS for too many open files
+#### Troubleshooting macOS for too many open files
 
 If you run `make serve` on macOS and receive the following error:
 
@@ -112,6 +131,7 @@ sudo launchctl load -w /Library/LaunchDaemons/limit.maxfiles.plist
 
 This works for Catalina as well as Mojave macOS.
 
-## Thank you
+## Thank you for your Help!
 
-PlaidCloud thrives on community participation, and we appreciate your contributions to our website and our documentation!
+PlaidCloud documentation is important because it helps our customers, allows people to be self-sufficient, and provides a positive feedback loop
+for prospective customers to feel they have the information necessary to get started.
