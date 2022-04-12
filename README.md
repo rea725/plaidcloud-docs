@@ -15,7 +15,7 @@ There are three main ways to contribute to the documentation depending on how mu
 
 ## Easy
 
-This requires no cloning or any other local setup for you to contribute to documentation.  Simply to to the [PlaidCloud Documentation Github](https://github.com/PlaidCloud/plaidcloud-docs) repo and navigate
+This requires no cloning or any other local setup for you to contribute to documentation.  Simply go to the [PlaidCloud Documentation Github](https://github.com/PlaidCloud/plaidcloud-docs) repo and navigate
 to the page you wish to edit.
 
 Click the `Edit this file` option on the menu and make your edits.
