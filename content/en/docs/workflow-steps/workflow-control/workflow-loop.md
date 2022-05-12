@@ -1,7 +1,7 @@
 ---
-title: Stop Loop
-slug: stop-loop
-description: Stop a recurring workflow dataset using Project variables
+title: Worklow Loop
+slug: workflow-loop
+description: Runs a workflow looping over a dataset as Project variables
 date: 2022-01-25T07:39:50
 ---
 
