@@ -1,9 +1,11 @@
 ---
 linktitle: API
-title: APIs
+title: "APIs"
+type: swagger
 sitemap:
   priority: 1.0
+weight: 1
+description: Interactive API Documentation
 ---
 
-PlaidCloud provides an extensive set of APIs accessible through JSON-RPC requests.  Eventually, the documentation of these will be in this section but they are currently
-located at our [API Documentation Site](https://api.plaidcloud.com).
+{{< swaggerui src="https://atower.plaidcloud.io/json-rpc/public/system/openapi_endpoints" >}}
