@@ -8,4 +8,4 @@ weight: 1
 description: Interactive API Documentation
 ---
 
-{{< swaggerui src="https://atower.plaidcloud.io/json-rpc/public/system/openapi_endpoints" >}}
+{{< swaggerui src="https://atower.plaidcloud.io/open-api" >}}
