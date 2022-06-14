@@ -57,8 +57,8 @@ To use this repository, you need the following installed locally:
 Before you start, install the dependencies. Clone the repository and navigate to the directory:
 
 ```bash
-git clone https://github.com/PlaidCloud/website.git
-cd website
+git clone https://github.com/PlaidCloud/plaidcloud-docs.git
+cd plaidcloud-docs
 ```
 
 The PlaidCloud website uses the [Docsy Hugo theme](https://github.com/google/docsy#readme). Even if you plan to run the website in a container, we strongly recommend pulling in the submodule and other development dependencies by running the following:
