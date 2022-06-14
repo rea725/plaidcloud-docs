@@ -37,8 +37,7 @@ Once your PR is accepted and your changes merge into `main` then the IO site wil
 
 This is very much like the **Engaged** approach but with the ability to see your changes live by running a local Hugo server.
 
-Again, the need to run the Hugo server locally will boost productivity if you are contributing many changes but is likely not necessary for quick changes and additions that follow standard 
-markdown conventions.
+Again, the need to run the Hugo server locally will boost productivity if you are contributing many changes but is likely not necessary for quick changes and additions that follow standard markdown conventions.
 
 ### Using this repository
 
@@ -86,7 +85,7 @@ hugo serve -D --panicOnWarning
 
 This will start the local Hugo server on port 1313. Open up your browser to <http://localhost:1313> to view the website. As you make changes to the source files, Hugo updates the website and forces a browser refresh.
 
-Keep in mind that the local server is not recreating all the static content so changes to templates might require a restart of the local hugo server for the template changes to be incoporated in what you see.
+Keep in mind that the local server is not recreating all the static content so changes to templates might require a restart of the local hugo server for the template changes to be incorporated in what you see.
 
 
 ### Troubleshooting
