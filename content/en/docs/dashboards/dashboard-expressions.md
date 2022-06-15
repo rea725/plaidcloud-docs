@@ -58,7 +58,6 @@ Conditional statement
 ```
 CASE WHEN "Field_A"= 'Foo' THEN max(coalesce("Value_A",0.0)) - max(coalesce("Value_B",0.0)) END
 
-
 ## Calculated Columns
 Calculated columns are typically additional columns made by combining logic and existing columns.
 
