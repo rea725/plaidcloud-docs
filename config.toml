@@ -166,7 +166,8 @@ gcs_engine_id = "ee7b3fb393a7e3b28"
 algolia_docsearch = false
 
 # Enable Lunr.js offline search
-offlineSearch = false
+offlineSearch = true
+offlineSearchSummaryLength = 200
 
 [params.pushAssets]
 css = [
