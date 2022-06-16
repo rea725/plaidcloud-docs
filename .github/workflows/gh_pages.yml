@@ -59,3 +59,22 @@ jobs:
 
       - name: Deploy
         run: hugo deploy --target="hugo-gcs" --invalidateCDN --maxDeletes -1
+
+      - name: Notify Slack
+         uses: 8398a7/action-slack@v3
+         if: always() # Pick up events even if the job fails or is canceled.
+         env:
+           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+           MATRIX_CONTEXT: ${{ toJson(matrix) }} # required
+         with:
+           channel: documentation
+           username: 'test'
+           status: ${{ job.status }}
+           fields: workflow,job,commit,repo,ref,author,took
+         custom_payload: |
+           {
+             attachments: [{
+               color: '${{ job.status }}' === 'success' ? 'good' : '${{ job.status }}' === 'failure' ? 'danger' : 'warning',
+               text: `Build and Deploy of Documentation by ${process.env.AS_AUTHOR} ${{ job.status }} after ${process.env.AS_TOOK}`,
+             }]
+           }
