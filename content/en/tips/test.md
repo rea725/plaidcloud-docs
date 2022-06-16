@@ -95,6 +95,7 @@ mind:
 - A bullet list item can contain a numbered list.
     1.  Numbered sub-list item 1
     2.  Numbered sub-list item 2
+    3.  Numbered sub-list item 3
 
 ### Numbered lists
 
