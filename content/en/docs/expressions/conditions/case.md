@@ -39,6 +39,6 @@ case(
     (get_column(table1, 'Serial Number').contains('_'), get_column(table1, 'Marketing Channel')),
     (get_column(table2, 'Marketing Channel') != Null, get_column(table2, 'Marketing Channel')), 
     else_ = 'none'
-    ) test
+    )
 
 ```
