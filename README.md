@@ -77,6 +77,14 @@ npm ci
 make serve
 ```
 
+If you get an error complaining about package-lock.json, then try the following:
+```bash
+# install dependencies
+npm install
+npm ci
+make serve
+```
+
 Now you can just run this command:
 
 ```bash
