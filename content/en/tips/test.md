@@ -97,6 +97,7 @@ mind:
     2.  Numbered sub-list item 2
     3.  Numbered sub-list item 3
     4.  Numbered sub-list item 4
+    4.  Numbered sub-list item 5
 
 ### Numbered lists
 
