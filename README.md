@@ -140,5 +140,4 @@ This works for Catalina as well as Mojave macOS.
 
 ## Thank you for your Help!
 
-PlaidCloud documentation is important because it helps our customers, allows people to be self-sufficient, and provides a positive feedback loop
-for prospective customers to feel they have the information necessary to get started.
+PlaidCloud documentation is important because it helps our user community, allows people to be self-sufficient, and provides a positive feedback loop for prospective community members to feel they have the information necessary to get started.
